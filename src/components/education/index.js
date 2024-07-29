@@ -6,6 +6,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { Box } from '@mui/material';
 
 export default function Education() {
     const breadcrumbs = [
@@ -15,8 +16,8 @@ export default function Education() {
     ];
 
     return (
-        <>
-            <Grid container justifyContent="center">
+        <Box sx={{ px: { xs: '5%', sm: '20%' }, py: 6 }}>
+            <Grid container>
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}
                     aria-label="breadcrumb"
@@ -29,7 +30,7 @@ export default function Education() {
             <br />
             <Grid container spacing={2} justifyContent="center">
                 <Grid item xs={12}>
-                    <Card variant="outlined" sx={{ borderRadius: '16px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding: '20px'}}>
+                    <Card sx={{ padding: '20px', borderRadius: '10px', textAlign: 'center' }}>
                         <CardContent>
                             <Typography variant='h5' textAlign='center' gutterBottom>University of California, Berkeley</Typography>
                             <Typography variant='body1' textAlign='center' gutterBottom>B.S. in Electrical Engineering and Computer Science</Typography>
@@ -39,6 +40,6 @@ export default function Education() {
                 </Grid>
             </Grid>
             <br />
-        </>
+        </Box>
     );
 }

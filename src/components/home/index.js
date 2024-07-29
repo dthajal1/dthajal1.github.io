@@ -6,8 +6,11 @@ import Button from '@mui/material/Button';
 import Me from "../../resources/images/me.jpeg";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { IoIosArrowDown } from 'react-icons/io';
+import { GitHub, LinkedIn } from '@mui/icons-material';
+import { Box, Paper } from '@mui/material';
 
 const titles = ["Full Stack Engineer", "Backend Engineer"];
+export const resumeHref = "https://drive.google.com/file/d/1D0s2JTQ7ZhMcDm2LtgrWJoe9d7VfPopW/view";
 
 const LandingPage = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -29,8 +32,8 @@ const LandingPage = () => {
   };
 
   return (
-    <>
-      <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: '95vh' }}>
+    <Box sx={{px: { xs: '5%', sm: '20%' }, py: 6 }}>
+      <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: '90vh' }}>
         {/* Headshot */}
         <Grid item xs={6} md={6} style={{ textAlign: 'center' }}>
           <img src={Me} alt="Your Name" style={{ maxWidth: '100%', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
@@ -50,24 +53,31 @@ const LandingPage = () => {
           <Typography variant="body1" align="center" paragraph>
             Hello! I'm Diraj, a passionate software engineer with expertise in building web applications
           </Typography>
+          <Paper elevation={1} style={{ padding: '20px', borderRadius: '10px', textAlign: 'center' }}>
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
-                <Button variant="contained" startIcon={<CloudDownloadIcon />} href='https://drive.google.com/file/d/1OVDlqDYNWZWiTc6o4MYddESTpS43co05/view?usp=sharing'>
-                    Resume
-                </Button>
+              <Button variant="contained" startIcon={<CloudDownloadIcon />} href={resumeHref}>
+                  Resume
+              </Button>
             </Grid>
             <Grid item>
-              <Button variant="contained" color="primary" onClick={() => scrollToSection('contact')}>
-                Contact Me
+              <Button variant="contained" startIcon={<LinkedIn />} href='https://linkedin.com/in/diraj-thajali'>
+                LinkedIn
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button variant="contained" startIcon={<GitHub />} href="https://github.com/dthajal1">
+                GitHub
               </Button>
             </Grid>
           </Grid>
+          </Paper>
         </Grid>
       </Grid>
       <Grid container justifyContent="center">
         <IoIosArrowDown style={{ fontSize: '40px', cursor: 'pointer' }} onClick={() => scrollToSection('about-me')} />
       </Grid>
-    </>
+    </Box>
   );
 }
 
