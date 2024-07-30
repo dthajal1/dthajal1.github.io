@@ -26,7 +26,7 @@ const AboutMe = () => {
           In my free time, I enjoy coaching kids in soccer, exploring new tech trends, and working on personal projects. Always eager to learn more and take on new challenges!
           </Typography>
           <Typography paragraph>
-          Feel free to connect with me if you’d like to chat about tech, soccer, or anything in between
+          Feel free to connect with me if you’d like to chat about tech, soccer, or anything in between!
           </Typography>
         </Grid>
       </Grid>

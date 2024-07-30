@@ -14,7 +14,7 @@ import Futbol2 from "../../resources/images/misc/me_futbol_2.JPEG";
 const Miscellaneous = () => {
   const breadcrumbs = [
     <Typography variant='h4' key="3" color="text.primary">
-      Miscellaneous
+      Miscellaneous;
     </Typography>,
   ];
 
@@ -51,7 +51,7 @@ const Miscellaneous = () => {
 
   return (
     <Box sx={{ px: { xs: '5%', sm: '20%' }, py: 6, backgroundColor: 'background.paper' }}>
-      <Grid container justifyContent="center">
+      <Grid container>
         <Breadcrumbs
           separator={<NavigateNextIcon fontSize="small" />}
           aria-label="breadcrumb"

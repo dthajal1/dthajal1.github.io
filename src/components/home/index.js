@@ -33,7 +33,7 @@ const LandingPage = () => {
 
   return (
     <Box sx={{px: { xs: '5%', sm: '20%' }, py: 6 }}>
-      <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: '90vh' }}>
+      <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: '85vh' }}>
         {/* Headshot */}
         <Grid item xs={6} md={6} style={{ textAlign: 'center' }}>
           <img src={Me} alt="Your Name" style={{ maxWidth: '100%', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
@@ -53,30 +53,30 @@ const LandingPage = () => {
           <Typography variant="body1" align="center" paragraph>
             Hello! I'm Diraj, a passionate software engineer with expertise in building web applications
           </Typography>
-          <Paper elevation={1} style={{ padding: '20px', borderRadius: '10px', textAlign: 'center' }}>
-          <Grid container spacing={2} justifyContent="center">
-            <Grid item>
-              <Button variant="contained" startIcon={<CloudDownloadIcon />} href={resumeHref}>
-                  Resume
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button variant="contained" startIcon={<LinkedIn />} href='https://linkedin.com/in/diraj-thajali'>
-                LinkedIn
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button variant="contained" startIcon={<GitHub />} href="https://github.com/dthajal1">
-                GitHub
-              </Button>
-            </Grid>
+          <Grid container justifyContent="center">
+            <IoIosArrowDown className="bounce" style={{ fontSize: '40px', cursor: 'pointer' }} onClick={() => scrollToSection('about-me')} />
           </Grid>
-          </Paper>
         </Grid>
       </Grid>
-      <Grid container justifyContent="center">
-        <IoIosArrowDown style={{ fontSize: '40px', cursor: 'pointer' }} onClick={() => scrollToSection('about-me')} />
-      </Grid>
+      <Paper elevation={1} style={{ padding: '20px', borderRadius: '10px', textAlign: 'center' }}>
+        <Grid container spacing={2} justifyContent="center" py={2}>
+          <Grid item>
+            <Button variant="contained" startIcon={<CloudDownloadIcon />} href={resumeHref}>
+                Resume
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant="contained" startIcon={<LinkedIn />} href='https://linkedin.com/in/diraj-thajali'>
+              LinkedIn
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant="contained" startIcon={<GitHub />} href="https://github.com/dthajal1">
+              GitHub
+            </Button>
+          </Grid>
+        </Grid>
+      </Paper>
     </Box>
   );
 }
