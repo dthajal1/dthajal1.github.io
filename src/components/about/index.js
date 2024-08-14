@@ -25,8 +25,7 @@ const AboutMe = () => {
           <Typography paragraph>
           Before beginning my career in software engineering, I went on to play professional soccer abroad. 
           Through my soccer journey, I have learned that with right mindset, attitude, heart and grit,
-          we can achieve anything--whether it’s mastering a sport, learning to play guitar or developing cutting-edge software. 
-          Now, the same drive and determination I used to excel in soccer, fuels my passion for technology.
+          we can achieve anything. Now, the same drive and determination I used to excel in soccer, fuels my passion for technology.
           </Typography>
           <Typography paragraph>
           In my free time, I enjoy coaching kids in soccer, exploring new tech trends, and building cool projects.
