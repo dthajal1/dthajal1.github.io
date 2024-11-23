@@ -28,7 +28,7 @@ const AboutMe = () => {
           we can achieve anything. Now, the same drive and determination I used to excel in soccer, fuels my passion for technology.
           </Typography>
           <Typography paragraph>
-          In my free time, I enjoy coaching kids in soccer, exploring new tech trends, and building cool projects.
+          In my free time, I enjoy coaching soccer, exploring new tech trends, and building cool projects.
           Always eager to learn more and take on new challenges.
           </Typography>
           <Typography paragraph>
