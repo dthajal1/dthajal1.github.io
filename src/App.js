@@ -35,8 +35,8 @@ export default function App() {
         <NavBar />
         <LandingPage />
         <AboutMe />
-        <Projects />
-        <Skills />
+        // <Projects />
+        // <Skills />
         <Education />
         <Miscellaneous />
         <Footer />
